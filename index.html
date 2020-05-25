@@ -42,13 +42,16 @@
     <!-- ******HEADER****** -->
     <header class="header">
         <div class="container clearfix">
-            <img class="profile-image img-fluid float-left" src="assets/images/profile.jpg" alt="Benaiah Barango" />
+            <img class="profile-image img-fluid float-left" src="assets/images/Portfolio_profile.jpg"
+                alt="Benaiah Barango" />
             <div class="profile-content float-left">
                 <h1 class="name">Benaiah Barango</h1>
                 <h2 class="desc">Front-End Web Developer</h2>
                 <ul class="social list-inline">
                     <li class="list-inline-item"><a href="https://www.linkedin.com/in/benaiah-ambie-barango/"
                             target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="list-inline-item"><a href="https://medium.com/@bennieb96" target="_blank"><i
+                                class="fab fa-medium"></i></a></li>
                     <li class="list-inline-item"><a href="mailto:benaiahambiebarango@hotmail.com" target="_blank"><i
                                 class="fas fa-envelope"></i></a></li>
                     <li class="list-inline-item"><a href="https://github.com/bambie1" target="_blank"><i
@@ -86,28 +89,27 @@
                         <div class="content">
 
                             <div class="item featured text-center">
-                                <h3 class="title"><a href="https://travel-diaryapp.herokuapp.com/"
-                                        target="_blank">Travel Diary</a></h3>
-                                <p class="summary">An app for journalling your upcoming trips </p>
+                                <h3 class="title"><a href="https://uncltr-notes.web.app/" target="_blank">UNCLTR
+                                        Notes</a></h3>
+                                <p class="summary">A notes-taking web app</p>
                                 <div class="featured-image">
-                                    <a href="https://travel-diaryapp.herokuapp.com/" target="_blank">
+                                    <a href="https://uncltr-notes.web.app/" target="_blank">
                                         <img class="img-fluid project-image"
-                                            src="assets/images/projects/travel-trips.PNG" alt="project name" />
+                                            src="assets/images/projects/uncltr-notes.png" alt="project name" />
                                     </a>
                                 </div>
 
                                 <div class="desc text-left">
-                                    <p>This app was created using NodeJS. The user enters a trip details (location and
-                                        date), and a trip card with useful information (weather and location-photon) is
-                                        dynamically created with async Javascript and multiple API calls. All trip cards
-                                        are saved on the server along with user-notes. The HTML, Sass and JS files were
-                                        minified and built with Webpack.</p>
+                                    <p>A notes-taking web app created with React and Firebase. Firebase is used for
+                                        authentication, database for notes, and hosting the website. Beautiful dnd was
+                                        used to allow users to reorder notes, and save the order. And React Quill
+                                        provides an easy-to-format editor that stores data in HTML format. </p>
                                 </div>
                                 <!--//desc-->
                                 <div class="d-flex justify-content-around link-btns">
-                                    <a class="btn btn-cta-secondary" href="https://github.com/bambie1/Travel_App"
+                                    <a class="btn btn-cta-secondary" href="https://github.com/bambie1/notes-with-react"
                                         target="_blank">GitHub repo</a>
-                                    <a class="btn btn-cta-secondary" href="https://travel-diaryapp.herokuapp.com/"
+                                    <a class="btn btn-cta-secondary" href="https://uncltr-notes.web.app/"
                                         target="_blank">Website</a>
                                 </div>
 
@@ -115,7 +117,6 @@
                         </div>
                         <!--//content-->
                     </div>
-
                 </section>
                 <!--//section-->
                 <!--//section-->
@@ -124,10 +125,32 @@
                         <h2 class="heading">Other Projects</h2>
                         <div class="content">
                             <div class="item">
+                                <h3 class="title"><a href="https://github.com/bambie1/Travel_App" target="_blank">Travel
+                                        Diary</a></h3>
+                                <p class="summary">A NodeJS app for journalling your upcoming trips. The user enters a
+                                    trip details
+                                    (location and
+                                    date), and a trip card with useful information (weather and location-photon) is
+                                    dynamically created with async Javascript and multiple API calls. All trip cards
+                                    are saved on the server along with user-notes. The HTML, Sass and JS files were
+                                    minified and built with Webpack.</p>
+                                <p><a class="more-link" href="https://github.com/bambie1/Travel_App" target="_blank"><i
+                                            class="fas fa-external-link-alt"></i>View on Github</a>
+                                </p>
+                                <p><a class="more-link" href="https://travel-diaryapp.herokuapp.com/" target="_blank"><i
+                                            class="fas fa-external-link-alt"></i>View website</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="item">
                                 <h3 class="title"><a href="https://github.com/bambie1/My-NLP-app" target="_blank">News
                                         Language Processing Website</a></h3>
                                 <p class="summary">Web-app created with NodeJS for extracting information from a
-                                    news article URL. The Aylien API was used to obtain the information for any URL
+                                    news article URL. The <a
+                                        href="https://docs.aylien.com/textapi/endpoints/?javascript#article-extraction"
+                                        target="_blank">Aylien
+                                        API</a> was used to obtain the information for any URL
                                     entered by the user. The page, written with HTML5, was styled using Bootstrap and
                                     Sass, and built with Webpack.</p>
                                 <p><a class="more-link" href="https://github.com/bambie1/My-NLP-app" target="_blank"><i
@@ -135,22 +158,23 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="content">
+                        <!-- <div class="content">
                             <div class="item">
                                 <h3 class="title"><a href="https://github.com/bambie1/Weather-Journal-App"
                                         target="_blank">Weather Journal App</a></h3>
                                 <p class="summary">This is a NodeJS app with a server-side database array. It makes an
-                                    API call based on a zipcode entered by the user, and stores the weather forecast,
+                                    API call (<a href="https://openweathermap.org/api" target="_blank">Open Weather</a>)
+                                    based on a zipcode entered by the user, and stores the weather forecast,
                                     along with the user's journal entry on the server. Each entry is also displayed on
                                     the page.</p>
                                 <p><a class="more-link" href="https://github.com/bambie1/Weather-Journal-App"
                                         target="_blank"><i class="fas fa-external-link-alt"></i>View on Github</a>
                                 </p>
                             </div>
-                        </div>
+                        </div> -->
 
-                        <a class="btn btn-cta-secondary" href="https://github.com/bambie1">More on Github <i
-                                class="fas fa-chevron-right"></i></a>
+                        <a class="btn btn-cta-secondary" href="https://github.com/bambie1" target="_blank">More on
+                            Github <i class="fas fa-chevron-right"></i></a>
                     </div>
                 </section>
 
@@ -160,23 +184,29 @@
                         <div class="content">
                             <div class="item">
                                 <h3 class="title">Front-End Developer - <span class="place"><a
-                                            href="www.kweeve.com">Kweeve</a></span> <span class="year">(2019 -
+                                            href="www.kweeve.com">Kweeve</a></span> <span class="year">(2020 -
                                         Present)</span></h3>
-                                <p>Worked on the front-end team to create a UI-friendly website for users to contribute
+                                <p>Worked with the front-end team to create a UI-friendly website for users to
+                                    contribute
                                     to their preferred charities, and also for the charities to manage donations</p>
                             </div>
                             <!--//item-->
                             <div class="item">
-                                <h3 class="title">Data Analyst - <span class="place"><a
-                                            href="https://www.inspection.gc.ca/eng/1297964599443/1297965645317">Canadian
-                                            Food
-                                            Inspection Agency</a></span>
-                                    <span class="year">(2013 - 2014)</span></h3>
-                                <p>Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam,
-                                    orci
-                                    eu suscipit pellentesque, mauris dui tincidunt enim. Sed fringilla mauris sit
-                                    amet
-                                    nibh. Donec sodales sagittis magna.</p>
+                                <h3 class="title">Assistant Manager - <span class="place"><a
+                                            href="https://www.inspection.gc.ca/eng/1297964599443/1297965645317">Enterprise
+                                            Rent-A-Car</a></span>
+                                    <span class="year">(2019- 2020)</span></h3>
+                                <p>
+                                <ul style="list-style-type: none; padding: 0;">
+                                    <li>- Effectively ran a car rental branch when needed, maximizing profits and
+                                        ensuring
+                                        customer satisfaction</li>
+                                    <li>- Provided adequate front-end and back-end rental training for new trainees</li>
+                                    <li>- Addressed customer service needs quickly and professionally, while meeting
+                                        company
+                                        service expectations</li>
+                                </ul>
+                                </p>
                             </div>
                             <!--//item-->
                         </div>
@@ -191,33 +221,30 @@
                     <div class="section-inner">
                         <h2 class="heading">Skills</h2>
                         <div class="content">
-                            <p class="intro">
-                                Intro about your skills goes here. Keep the list lean and only show your primary
-                                skillset. You can always provide a link to your Linkedin or Coderwall profile so people
-                                can get more info there.</p>
+                            <p class="intro">As the legendary Usain Bolt says, skill is
+                                only developed by hours and hours of work</p>
 
                             <div class="skillset">
 
                                 <div class="item">
                                     <h3 class="level-title">React<span class="level-label" data-toggle="tooltip"
-                                            data-placement="left" data-animation="true"
-                                            title="You can use the tooltip to explain more about your skill level..."><i
-                                                class="fas fa-info-circle"></i>Competent</span></h3>
+                                            data-placement="left" data-animation="true"><i
+                                                class="fas fa-info-circle"></i>Proficient</span></h3>
                                     <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="55%">
+                                        <div class="level-bar-inner" data-level="75%">
                                         </div>
                                     </div>
                                     <!--//level-bar-->
                                 </div>
+                                <!-- title="You can use the tooltip to explain more about your skill level..." -->
                                 <!--//item-->
 
                                 <div class="item">
                                     <h3 class="level-title">Javascript &amp; jQuery<span class="level-label"
-                                            data-toggle="tooltip" data-placement="left" data-animation="true"
-                                            title="You can use the tooltip to explain more about your skill level..."><i
-                                                class="fas fa-info-circle"></i>Proficient</span></h3>
+                                            data-toggle="tooltip" data-placement="left" data-animation="true"><i
+                                                class="fas fa-info-circle"></i>Expert</span></h3>
                                     <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="75%">
+                                        <div class="level-bar-inner" data-level="90%">
                                         </div>
                                     </div>
                                     <!--//level-bar-->
@@ -226,8 +253,7 @@
 
                                 <div class="item">
                                     <h3 class="level-title">HTML5, CSS3 &amp; SASS<span class="level-label"
-                                            data-toggle="tooltip" data-placement="left" data-animation="true"
-                                            title="You can use the tooltip to explain more about your skill level..."><i
+                                            data-toggle="tooltip" data-placement="left" data-animation="true"><i
                                                 class="fas fa-info-circle"></i>Expert</span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="89%">
@@ -238,7 +264,7 @@
                                 <!--//item-->
                                 <!--//item-->
 
-                                <p><a class="more-link" href="https://github.com/bambie1"><i
+                                <p><a class="more-link" href="https://github.com/bambie1" target="_blank"><i
                                             class="fas fa-external-link-alt"></i>More on
                                         Github</a></p>
                             </div>
@@ -251,28 +277,25 @@
 
                 <aside class="testimonials aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Testimonials</h2>
+                        <h2 class="heading">Latest article</h2>
                         <div class="content">
                             <div class="item">
-                                <blockquote class="quote">
-                                    <p><i class="fas fa-quote-left"></i>James is an excellent software engineer and he
-                                        is passionate about what he does. You can totally count on him to deliver your
-                                        projects!</p>
-                                </blockquote>
-                                <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur
-                                        commodo</span></p>
+                                <a href="https://medium.com/@bennieb96/my-journey-to-front-end-development-44e8677edb80"
+                                    target="_blank">
+                                    <h3 class="title"><i class="fab fa-medium"></i> My journey to front-end development
+                                    </h3>
+                                    <img class="img-fluid project-image" src="assets/images/projects/medium-snip.png"
+                                        alt="project name" />
+                                </a>
                             </div>
-                            <!--//item-->
 
-                            <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on
-                                    Linkedin</a></p>
+                            <p><a href="https://medium.com/@bennieb96" target="_blank"><i
+                                        class="fas fa-external-link-alt"></i>More on
+                                    Medium</a></p>
 
                         </div>
-                        <!--//content-->
                     </div>
-                    <!--//section-inner-->
                 </aside>
-                <!--//section-->
 
                 <aside class="education aside section">
                     <div class="section-inner">
@@ -282,7 +305,8 @@
                                 <h3 class="title"><i class="fas fa-graduation-cap"></i> Front-End Nanodegree</h3>
                                 <h4 class="university">UDACITY <span class="year">(2020)</span>
                                 </h4>
-                                <a class="certificate" href="https://confirm.udacity.com/3JT9PC9">Certficate</a>
+                                <a class="certificate" href="https://confirm.udacity.com/3JT9PC9"
+                                    target="_blank">Certficate</a>
                             </div>
                             <!--//item-->
                             <div class="item">
@@ -326,18 +350,19 @@
 
                 <aside class="list music aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Favourite coding music</h2>
+                        <h2 class="heading">Favourite coding playlists</h2>
                         <div class="content">
                             <ul class="list-unstyled">
                                 <li><i class="fas fa-headphones"></i> <a
-                                        href="https://www.youtube.com/watch?v=1i1Mv-cNy3w" target="_blank">KB/Aha -
-                                        Monster</a></li>
+                                        href="https://www.youtube.com/watch?v=1i1Mv-cNy3w" target="_blank">KB -
+                                        No Chains</a></li>
                                 <li><i class="fas fa-headphones"></i> <a
-                                        href="https://www.youtube.com/watch?v=M3Tf9yccMlk&list=PLFzqISHPMte8HwGLGX-0306MDvdB9Albd"
+                                        href="https://www.youtube.com/watch?v=873Q1X6J_HE&list=RDQMoRM4HZR6bMI&start_radio=1"
                                         target="_blank">Andy
-                                        Mineo - DANCE</a></li>
+                                        Mineo - None of My Business</a></li>
                                 <li><i class="fas fa-headphones"></i> <a
-                                        href="https://www.youtube.com/watch?v=oCAY_qeDo-w" target="_blank">Maverick City
+                                        href="https://www.youtube.com/watch?v=oCAY_qeDo-w&list=RDoCAY_qeDo-w&start_radio=1&t=4"
+                                        target="_blank">Maverick City
                                         - Most
                                         Beautiful</a></li>
                             </ul>
@@ -358,7 +383,7 @@
     <!-- ******FOOTER****** -->
     <footer class="footer">
         <div class="container text-center">
-            <p>(c) Ben 2020</p>
+            <p>&copy; Ben 2020</p>
             <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
             <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a
                     href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>

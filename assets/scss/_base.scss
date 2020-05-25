@@ -64,14 +64,14 @@ a.btn-cta-primary,
 
 a.btn-cta-secondary,
 .btn-cta-secondary {
-  background: $btn-color-2;
-  border: 1px solid $btn-color-2;
+  background: $gold;
+  border: 1px solid $gold;
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
   &:hover {
-    background: darken($btn-color-2, 5%);
-    border: 1px solid darken($btn-color-2, 5%);
+    background: darken($gold, 5%);
+    border: 1px solid darken($gold, 5%);
     color: #fff;
   }
 }
@@ -99,15 +99,16 @@ a.dotted-link {
 /* ======= Header ======= */
 .header {
   padding: 30px 0;
-  background: $smoky-white;
-  border-top: 10px solid $color;
+  background: $gold; //smokywhite
   .btn {
     margin-top: 60px;
     font-weight: bold;
   }
   .profile-image {
-    margin-right: 30px;
-    width: 8vh;
+    margin: 30px 30px 0px 0px;
+    width: 23vh;
+    border-radius: 50%;
+    height: 26vh;
   }
   .profile-content {
     .name {
@@ -209,7 +210,7 @@ a.dotted-link {
     margin-bottom: 60px;
   }
   .featured {
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
     .title {
       font-size: 20px;
       margin-bottom: 5px;
@@ -224,53 +225,6 @@ a.dotted-link {
     }
     .desc {
       margin-bottom: 30px;
-    }
-  }
-  .has-ribbon {
-    position: relative;
-    display: inline-block;
-    .text {
-      background: $color-2;
-      color: #fff;
-    }
-    .ribbon {
-      position: absolute;
-      top: -4px;
-      right: -4px;
-      width: 110px;
-      height: 110px;
-      overflow: hidden;
-
-      .text {
-        font-family: "Montserrat", sans-serif;
-        position: relative;
-        left: -8px;
-        top: 18px;
-        width: 158px;
-        padding: 10px 10px;
-        font-size: 15px;
-        font-weight: bold;
-        text-align: center;
-        text-transform: uppercase;
-        color: #fff;
-        background-color: $btn-color-2;
-        @include transform(rotate(45deg) translate3d(0, 0, 0));
-        &:before,
-        &:after {
-          content: "";
-          position: absolute;
-          bottom: -5px;
-          border-top: 5px solid darken($btn-color-2, 20%);
-          border-left: 5px solid transparent;
-          border-right: 5px solid transparent;
-        }
-        &:before {
-          left: 0;
-        }
-        &:after {
-          right: 0;
-        }
-      }
     }
   }
 }
@@ -363,6 +317,18 @@ a.dotted-link {
 .skills {
   .intro {
     margin-bottom: 30px;
+  }
+  .source {
+    font-size: 14px;
+    padding-left: 20px;
+    font-weight: 500;
+    .name {
+      color: lighten($color, 10%);
+      font-weight: 600;
+    }
+    .title {
+      color: $grey;
+    }
   }
   .skillset {
     .item {
@@ -555,7 +521,7 @@ a.dotted-link {
 /* ======= Footer ======= */
 
 .footer {
-  background: darken($color, 30%);
+  background: $gold; //darken($color, 30%);
   color: #fff;
   padding: 10px 0;
 
