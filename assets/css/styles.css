@@ -514,6 +514,11 @@ a.dotted-link:hover {
 .footer .fa-heart {
   color: #fb866a;
 }
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 @media (max-width: 767.98px) {
   .header {
@@ -543,6 +548,19 @@ a.dotted-link:hover {
   .container {
     width: 1360px;
     max-width: inherit;
+  }
+}
+
+@media (min-width: 768px) {
+  #resume-link {
+    align-items: normal;
+    align-self: flex-end;
+  }
+  #resume-btn {
+    align-self: flex-start;
+  }
+  .header-text {
+    flex-direction: row;
   }
 }
 
