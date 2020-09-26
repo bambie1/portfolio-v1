@@ -519,6 +519,22 @@ a.dotted-link:hover {
   flex-direction: column;
   justify-content: space-between;
 }
+.tools-icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.svg-circle {
+  background: #c5cc82;
+  padding: 2px;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  width: 52px;
+  border-radius: 13px;
+}
+.svg-img {
+  max-width: 90%;
+}
 
 @media (max-width: 767.98px) {
   .header {
