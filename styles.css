@@ -1,0 +1,78 @@
+:root {
+  --primary: #c1a57b;
+  --secondary: #30475e;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Proza Libre", sans-serif;
+}
+h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin: 0;
+}
+p {
+  margin: 8px;
+}
+a {
+  color: inherit;
+}
+a:hover {
+  color: var(--primary);
+}
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border: 3px solid var(--primary);
+  display: flex;
+  place-content: center;
+  border-radius: 50%;
+}
+.social-media {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.main-container {
+  height: calc(100vh - 2rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: linear-gradient(
+      180deg,
+      var(--primary) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(0deg, var(--secondary), var(--secondary));
+  color: white;
+  text-align: center;
+}
+.social-links {
+  margin: 5px;
+}
+.social-links-svg {
+  height: 40px;
+  width: 40px;
+  fill: white;
+}
+.social-links-svg:hover {
+  fill: var(--primary);
+}
